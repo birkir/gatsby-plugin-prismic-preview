@@ -1,6 +1,6 @@
 # Prismic preview
 
-Enable previews of your prismic documents
+Enable previews of your prismic documents by looking for graphql query data and patch in data from prismic previews.
 
 ## Installing
 
@@ -57,6 +57,21 @@ options: {
 Where the preview page should live.
 
 Defaults to `/preview`.
+
+### Usage
+
+```jsx
+import { withPrismicPreview } from 'gatsby-plugin-prismic-preview';
+
+const AboutPage = ({ data }) => (
+  <h1>
+    About
+    {console.log('This will now include preview data:', data.prismicAboutPage.title)}
+  </h1>
+);
+
+export default withPrismicPreview({ data })(AboutPage);
+
 
 ## Staging environment
 
