@@ -58,7 +58,7 @@ Where the preview page should live.
 
 Defaults to `/preview`.
 
-### Usage
+## Usage
 
 ```jsx
 import { withPrismicPreview } from 'gatsby-plugin-prismic-preview';
@@ -71,7 +71,7 @@ const AboutPage = ({ data }) => (
 );
 
 export default withPrismicPreview({ data })(AboutPage);
-
+```
 
 ## Staging environment
 
@@ -99,3 +99,5 @@ module.exports = {
 ```
 
 ## Troubleshooting
+
+Report issues on GitHub
