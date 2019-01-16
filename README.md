@@ -2,7 +2,11 @@
 
 Enable previews of your prismic documents by looking for graphql query data and patch in data from prismic previews.
 
+> **Note**
+>
 > Checkout gatsby-source-prismic-graphql for updated version that works with Prismic's GraphQL API https://github.com/birkir/gatsby-source-prismic-graphql
+>
+> It has more features and much better stability
 
 ## Installing
 
